@@ -1,0 +1,20 @@
+/* Es la cabecera con el menú */
+.navbar {
+    height: 4rem;
+    list-style: none;
+    background-color: #be89e3;
+    }
+    
+    /* Color al nombre del navbar*/
+    .navbar h2 {
+    color: aliceblue;
+    }
+
+
+.formulario {
+    height: 8rem;
+    list-style: none;
+    background-color: #be89e3;
+    color: aliceblue;
+
+}
