@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
-<header>
+<header class="container-fluid">
     <nav class="navbar" >
             <div class="fila"><!-- Fila -->
                 <div>
@@ -19,25 +19,26 @@
 </header>
 
 <body>
-    <main>
-    <section>
+    <main >
+    <section class="container-fluid" >
+        <article id="articulo1">
         <h3>Ingresar Productos</h3>
         <form action="#"  id="formulario">
-            <input type="text" id="nombre" placeholder="Ingresa  producto">
-            <input type="text" id="descripcion" placeholder="Ingresa cantidad">
+            <input type="text" id="nombre" placeholder="Ingresar producto">
+            <input type="text" id="descripcion" placeholder="Ingresar descripción">
             <button type="submit" id="btnAgregar">Agregar</button>
         </form>
+            </article>
     </section>
 
 
     <section class="listado">
+        <article class ="div-productos">
         <h3>Listado Productos</h3>
-        <article class ="div-productos"></article>
+        </article>
     </section>
-    </main>
-</body>
 
-
+    <footer class="footer"><p>Copyright 2022©</p></footer>
 
 
     <script src="main.js"></script>

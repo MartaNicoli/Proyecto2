@@ -80,13 +80,13 @@ function mostrarProducto() {
         const editarBoton = document.createElement('button');
         editarBoton.onclick = () => cargarProducto(producto);
         editarBoton.textContent = 'Editar';
-        editarBoton.classList.add('btn', 'btn-editar');
+        editarBoton.classList.add('btn', 'btn-editar', 'btn-dark');
         parrafo.append(editarBoton);
 
         const eliminarBoton = document.createElement('button');
         eliminarBoton.onclick = () => eliminarProducto(id);
         eliminarBoton.textContent = 'Eliminar';
-        eliminarBoton.classList.add('btn', 'btn-eliminar');
+        eliminarBoton.classList.add('btn', 'btn-eliminar', 'btn-danger');
         parrafo.append(eliminarBoton);
 
         const hr = document.createElement('hr');
@@ -142,6 +142,7 @@ function eliminarProducto(id) {
     listaProductos = listaProductos.filter(producto => producto.id !== id);// Nos filtrara todos los elementos que no sean iguales al ID que ingreso el usuario.
     limpiarHTML();
     mostrarProducto();
+    localStorage.clear();
     
 }
 

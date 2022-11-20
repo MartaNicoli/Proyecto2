@@ -3,6 +3,9 @@
     height: 4rem;
     list-style: none;
     background-color: #be89e3;
+    justify-content: center;
+    align-items:center;
+
     }
     
     /* Color al nombre del navbar*/
@@ -11,10 +14,120 @@
     }
 
 
-.formulario {
+body {
     height: 8rem;
     list-style: none;
-    background-color: #be89e3;
-    color: aliceblue;
+    background-color: #efeaf3;
+    color: rgb(30, 31, 33);
+}
+
+
+section {
+    width: 100%;
+    height: calc(100vh - 100 px);
+    display: flex;
+    justify-content: center;
+}
+
+/*caja con los input nombre y descripción botón agregar*/
+#articulo1{
+width: 30%;
+height: 200px;
+margin: 15px 15px;
+background-color: rgb(135, 132, 132);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+box-shadow: 10px 10px rgb(0, 0, 0, 0.3);
+}
+
+#articulo1 h3{
+margin-top: 10px;
+font-weight: 200;
+font-size: 2em;
+color:#ddd;
+font-weight: bold;
+}
+
+/*ordena los campos del formulario en columnas*/
+#articulo1 form {
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#nombre {
+margin-bottom: 1rem;
+}
+
+#descripcion {
+    margin-bottom: 1rem;
+}
+
+#btnAgregar {
+border-radius: 10px;
 
 }
+
+#articulo1 form input,
+#articulo1 form button{
+width: 60%;
+padding: 5px 5px;
+margin: 5px 5px;
+}
+
+/*estilo listado*/
+.div-productos{
+width: 55%;
+height: calc(100% -50px);
+margin: 15px 15px;
+background-color: rgb(135, 132, 132);
+display: flex;
+flex-direction: column;
+border-radius: 10px;
+align-items: center;
+box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/*estilo al listado de productos*/
+.listado .div-productos{
+width: 80%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 15px ;
+padding: 0 30px; 
+}
+
+.listado .div-productos{
+margin: 10px 0;
+font-size: 1em;
+color: #ddd;
+}
+
+/*footer*/
+.footer{
+        font-family: Helvetica, Arial;
+        color: white;
+        height: 100px;
+        background: rgba(51, 51, 51,0.70);
+        margin: 0px auto;
+        width: 80%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 50px;
+        line-height: 47px;
+    }
+
+
+
+  
+   
+    
